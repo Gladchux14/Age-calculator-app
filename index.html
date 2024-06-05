@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="ask-age">
+          <label class="ask" id="askday">DAY</label>
+          <input id="Day" placeholder="DD" name="Date of the year" />
+          <p id="error"></p>
+        </div>
+
+        <div class="ask-age">
+          <label class="ask" id="askmonth">MONTH</label>
+          <input id="Month" placeholder="MM" name="Month of the year" />
+          <p id="error2"></p>
+        </div>
+
+        <div class="ask-age">
+          <label class="ask" id="askyear">YEAR</label>
+          <input id="Year" placeholder="YYYY" name="Year" />
+          <p id="error3"></p>
+        </div>
+      </div>
+
+      <div class="line">
+        <hr />
+        <button class="logo" type="button" onclick="calculate()">
+          <img src="./assets/images/icon-arrow.svg" alt=""  />
+        </button>
+      </div>
+
+      <div class="Result">
+        <div>
+          <h2 class="age-result">
+            <p id="result-Year" class="result">--</p>
+            <span class="text">years</span>
+          </h2>
+        </div>
+
+        <div>
+          <h2 class="age-result">
+            <p id="result-Month" class="result">--</p>
+           <span class="text" > months</span> 
+          </h2>
+        </div>
+
+        <div>
+          <h2 class="age-result">
+            <p id="result-Day" class="result">--</p>
+            <span class="text"> days</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

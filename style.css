@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins";
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  line-height: 1;
+  font-weight:  300, 700, 900;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+  margin: 60px;
+  padding: 40px;
+  border-radius: 1rem;
+  border-bottom-right-radius: 10rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.form {
+  display: flex;
+  gap: 25px;
+}
+
+.ask {
+  font-size: 8.4px;
+  font-weight: 800;
+  padding-bottom: 3.2px;
+  margin-left: 1.8px;
+}
+.ask-age {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.ask-age input {
+  width: 90px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.line {
+  display: flex;
+  margin-top: 40px;
+  padding-top: 25px;
+  margin-bottom: 0px;
+  margin-top: 2.4px;
+  align-items: center;
+}
+
+.line hr {
+  flex-grow: 1;
+  color: #dbd6d6cc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 55%;
+}
+
+.Result {
+  font-size: 40px;
+  padding-top: 0px;
+}
+.age-result {
+  display: flex;
+  font-size: 65px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.result {
+  color: purple;
+}
+
+.text{
+  font-weight: 900;
+  font-size: 65px;
+}
+
+#error,
+#error2,
+#error3 {
+  font-size: 12px;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+
+  /*********************************/
+/*MOBILE VIEW /
+/*********************************/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 400px;
+  padding: 45px;
+  border-bottom-right-radius: 7rem;
+}
+
+.form {
+  gap: 15px;
+}
+
+.ask {
+  font-size: 10px;
+  padding-bottom: 4px;
+}
+
+.ask-age input {
+  width: 65px;
+  height: 35px;
+}
+
+.line {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 65px;
+  height: 55px;
+}
+
+.Result{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.age-result {
+  display: flex;
+  font-size: 25px;
+  font-weight: 300;
+  /* font-style: italic; */
+}
+
+#Day,
+#Month,
+#Year{
+  padding: 6px;
+  font-weight: 200;
+  color: rgb(7, 7, 7);
+  border-color: rgb(180, 175, 175);
+}
+  
+}
+
+  
